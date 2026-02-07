@@ -25,12 +25,31 @@
             <ul id="lista" class="lista-itens"></ul>
             <button onclick="voltarParaCategorias()">⬅️ Voltar</button>
         </div>
+        <!-- Tela de Upgrade Pro -->
+        <div id="telaUpgrade" class="tela-upgrade" style="display: none;">
+            <img src="upgrade-banner.png" alt="Versão Pro" class="banner-upgrade">
+            <h2 style="color: #6a0dad;">🔓 Desbloqueie a Versão Pro</h2>
+            <ul>
+                <li>✅ Criar múltiplas listas</li>
+                <li>✅ Histórico de compras</li>
+                <li>✅ Tema escuro para uso noturno</li>
+                <li>✅ Backup automático na nuvem</li>
+                <li>✅ Sem anúncios</li>
+            </ul>
+            <button onclick="comprarVersaoPro()">Desbloquear por R$ 4,99</button>
+            <button onclick="fecharTelaUpgrade()">Voltar</button>
+        </div>
+
+
 
         <!-- Botão flutuante para enviar no WhatsApp -->
         <button id="enviar" onclick="enviarWhatsApp()" style="margin-top: 30px;">
             📤 Enviar Lista para WhatsApp
         </button>
     </div>
+    <button onclick="mostrarTelaUpgrade()">🔑 Quero a Versão Pro</button>
+
+
 
     <script src="script.js"></script>
     <div id="toast" class="toast" style="display:none;">Itens adicionados ao carrinho! 🛒</div>

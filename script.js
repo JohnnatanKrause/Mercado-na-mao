@@ -143,3 +143,18 @@ function mostrarToast(mensagem) {
         toast.style.display = "none";
     }, 2000);
 }
+function mostrarTelaUpgrade() {
+    document.getElementById("categorias").style.display = "none";
+    document.getElementById("itensDaCategoria").style.display = "none";
+    document.getElementById("telaUpgrade").style.display = "block";
+}
+
+function fecharTelaUpgrade() {
+    document.getElementById("telaUpgrade").style.display = "none";
+    renderizarCategorias();
+}
+
+function comprarVersaoPro() {
+    alert("Simulação: aqui você liberaria o upgrade após o pagamento!");
+    // Aqui futuramente você ativaria a versão Pro
+}
